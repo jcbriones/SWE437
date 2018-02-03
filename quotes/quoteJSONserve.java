@@ -14,6 +14,8 @@ import java.util.ArrayList;
 /**
  * @author Jeff Offutt & Mongkoldech Rajapakdee
  *         Date: Nov, 2009
+ * @author Modified by John Christopher Briones
+ *         Date: Feb, 2018
  *
  * Wiring the pieces together:
  *    quoteserve.java -- The servlet (entry point)
@@ -28,14 +30,13 @@ import java.util.ArrayList;
  *    quotes.js -- JS used by the HTML created in quoteserve
  *    quotes.xml -- Data file, read by QuoteSaxParser
  */
- public class quoteserve extends HttpServlet
+ public class quoteJSONserve extends HttpServlet
  {
 	 private static final String FileURL = "https://cs.gmu.edu/~offutt/classes/642/examples/servlets/quotes";
 	 private static final String FileJavascript = FileURL + "/quotes.js";
 
 	 // Data file
-	 // This shows up in /home/offutt/CS/webapps/WEB-INF/data/ from a terminal window.
-	 private static final String quoteFileName = "/var/www/CS/webapps/offutt/WEB-INF/data/quotes.xml";
+	 private static final String quoteFileName = "./quotes.xml";
 
 	 private static final String thisServlet = "https://cs.gmu.edu:8443/offutt/servlet/quotes.quoteserve";
 
@@ -319,4 +320,4 @@ private void printFooter (PrintWriter out) throws ServletException, IOException
 	out.println ("</body>");
 	out.println ("</html>");
 }
-} // end quoteserve class
+} // end quoteJSONserver class
