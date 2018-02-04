@@ -30,17 +30,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Initialize variables
         quoteArray = [Quote]()
         
-        // Insert Quotes
-//        quoteArray.append(Quote(author: "Test 1", quoteText: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.")!)
-//        quoteArray.append(Quote(author: "Test 2", quoteText: "Cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.")!)
-//        quoteArray.append(Quote(author: "Test 3", quoteText: "Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.")!)
-//
         // Parse XML file
         beginParsing(urlString: "https://gmu.jcbriones.com/quotes.xml")
         
         // Generate Random Quotes
         let quote = quoteArray[generateNumber()]
-        randomQuoteText.text = quote.getQuoteText() + " \n" + quote.getAuthor()
+        randomQuoteText.text = quote.getQuoteText() + " \n-- " + quote.getAuthor()
         
         // Copy Quote Array data to filtered Quote Array
         filteredQuotes = quoteArray
@@ -137,7 +132,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBAction func getAnotherRandomQuoteButton(_ sender: UIButton) {
         let quote = quoteArray[generateNumber()]
-        randomQuoteText.text = quote.getQuoteText() + " " + quote.getAuthor()
+        randomQuoteText.text = quote.getQuoteText() + " \n-- " + quote.getAuthor()
     }
     
     func generateNumber() -> Int {

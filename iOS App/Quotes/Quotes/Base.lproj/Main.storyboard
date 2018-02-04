@@ -40,6 +40,11 @@
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auI-Kd-H8c">
                                         <rect key="frame" x="0.0" y="158.5" width="335" height="30.5"/>
@@ -47,6 +52,11 @@
                                         <state key="normal" title="Get Another Random Quote">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="getAnotherRandomQuoteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nkx-Gp-Ajg"/>
                                         </connections>
@@ -271,7 +281,18 @@
                                     <constraint firstAttribute="trailing" secondItem="8a2-DB-aZK" secondAttribute="trailing" id="aen-RQ-pNu"/>
                                     <constraint firstItem="8a2-DB-aZK" firstAttribute="leading" secondItem="KxK-3F-9aa" secondAttribute="leading" id="jZX-z3-tle"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Jc Briones and Farbod Sedghi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcy-8I-iiI">
+                                <rect key="frame" x="0.0" y="983.5" width="375" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -280,10 +301,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KxK-3F-9aa" secondAttribute="trailing" constant="20" id="3V7-Y8-Ne8"/>
                             <constraint firstItem="1hy-yb-4Kq" firstAttribute="top" secondItem="ccx-26-WRW" secondAttribute="bottom" constant="20" id="D1Q-Kz-9qj"/>
                             <constraint firstItem="KxK-3F-9aa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IRU-Il-9JP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dcy-8I-iiI" secondAttribute="trailing" id="Z4y-hn-NGm"/>
                             <constraint firstItem="1hy-yb-4Kq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aQa-ln-vRh"/>
                             <constraint firstItem="ccx-26-WRW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dQM-sr-fN1"/>
+                            <constraint firstItem="dcy-8I-iiI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l6B-Eq-gpg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KxK-3F-9aa" secondAttribute="bottom" constant="20" id="mVX-OR-QNQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1hy-yb-4Kq" secondAttribute="trailing" constant="20" id="n4A-Qi-VZS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dcy-8I-iiI" secondAttribute="bottom" constant="2" id="por-jd-j1s"/>
                             <constraint firstItem="KxK-3F-9aa" firstAttribute="top" secondItem="1hy-yb-4Kq" secondAttribute="bottom" constant="20" id="zh2-fn-YFZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
