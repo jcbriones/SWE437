@@ -41,6 +41,6 @@ class Quote {
     }
     
     func toString() -> String {
-        return "Quote {" + "author='" + author + '\'' + ", quoteText='" + quoteText + '\'' + '}'
+        return "Quote {" + "author='" + author + "', quoteText='" + quoteText + "' }"
     }
 }

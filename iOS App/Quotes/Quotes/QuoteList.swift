@@ -11,6 +11,9 @@ import Foundation
 class QuoteList {
     
     //MARK: Properties
+    private static var SearchAuthorVal = 0
+    private static var SearchTextVal = 1
+    private static var SearchBothVal = 2
     
     var quoteArray: [Quote]
     
@@ -41,21 +44,21 @@ class QuoteList {
      * @return QuoteList containing the search results (may be multiple quotes)
      */
     func search(searchString: String, mode: Int) -> QuoteList {
-        var returnQuote = QuoteList()
+        let returnQuote = QuoteList()
         var quote: Quote
         for i in 0...getSize() {
             quote = quoteArray[i];
-            if (mode == SearchAuthorVal && quote.getAuthor().toLowerCase().indexOf (searchString.toLowerCase()) != -1) {
+            if mode == QuoteList.SearchAuthorVal && quote.getAuthor().lowercased().contains(searchString.lowercased()) {
                 // Found a matching author, save it
                 // print("Matched Author ");
                 returnQuote?.setQuote(q: quote);
             }
-            else if (mode == SearchTextVal && quote.getQuoteText().toLowerCase().indexOf (searchString.toLowerCase()) != -1) {
+            else if mode == QuoteList.SearchTextVal && quote.getQuoteText().lowercased().contains(searchString.lowercased()) {
                 // Found a matching quote, save it
                 // print("Matched Text ");
                 returnQuote?.setQuote(q: quote);
             }
-            else if ((mode == SearchBothVal) && (quote.getAuthor().toLowerCase().indexOf (searchString.toLowerCase()) != -1 || quote.getQuoteText().toLowerCase().indexOf (searchString.toLowerCase()) != -1)) {
+            else if mode == QuoteList.SearchBothVal && (quote.getAuthor().lowercased().contains(searchString.lowercased()) || quote.getQuoteText().lowercased().contains(searchString.lowercased())) {
                 // Found a matching author or quote, save it
                 // print("Matched Both ");
                 returnQuote?.setQuote(q: quote);
