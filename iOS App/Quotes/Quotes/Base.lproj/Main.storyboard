@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2EW-Hd-6q3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--The GMU Quote Generator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quotes" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,12 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The GMU Quote Generator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccx-26-WRW">
-                                <rect key="frame" x="20" y="40" width="335" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1hy-yb-4Kq">
                                 <rect key="frame" x="20" y="84" width="335" height="189"/>
                                 <subviews>
@@ -34,7 +28,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jq8-1D-JeG">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jq8-1D-JeG">
                                         <rect key="frame" x="0.0" y="25.5" width="335" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -296,22 +290,27 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccx-26-WRW" secondAttribute="trailing" constant="20" id="3Mb-Ni-2sx"/>
-                            <constraint firstItem="ccx-26-WRW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3Tv-WS-crB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KxK-3F-9aa" secondAttribute="trailing" constant="20" id="3V7-Y8-Ne8"/>
-                            <constraint firstItem="1hy-yb-4Kq" firstAttribute="top" secondItem="ccx-26-WRW" secondAttribute="bottom" constant="20" id="D1Q-Kz-9qj"/>
                             <constraint firstItem="KxK-3F-9aa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IRU-Il-9JP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dcy-8I-iiI" secondAttribute="trailing" id="Z4y-hn-NGm"/>
                             <constraint firstItem="1hy-yb-4Kq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aQa-ln-vRh"/>
-                            <constraint firstItem="ccx-26-WRW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dQM-sr-fN1"/>
                             <constraint firstItem="dcy-8I-iiI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l6B-Eq-gpg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KxK-3F-9aa" secondAttribute="bottom" constant="20" id="mVX-OR-QNQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1hy-yb-4Kq" secondAttribute="trailing" constant="20" id="n4A-Qi-VZS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dcy-8I-iiI" secondAttribute="bottom" constant="2" id="por-jd-j1s"/>
+                            <constraint firstItem="m8w-i2-Ycg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="uGl-c3-ow9"/>
                             <constraint firstItem="KxK-3F-9aa" firstAttribute="top" secondItem="1hy-yb-4Kq" secondAttribute="bottom" constant="20" id="zh2-fn-YFZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="The GMU Quote Generator" id="SMs-k1-HHi">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Yqo-1K-Cqf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fV0-XE-DM9">
+                            <connections>
+                                <segue destination="9Zb-J3-0QE" kind="show" id="f3F-jL-ciG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="communitySearches" destination="0ei-MS-y3E" id="zjx-cz-M1R"/>
@@ -324,6 +323,98 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.13343328335833"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ifl-G7-Poq">
+            <objects>
+                <navigationController id="2EW-Hd-6q3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dfn-bU-b6P">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QhZ-Bp-mZ5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecf-BV-iw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-647" y="-18"/>
+        </scene>
+        <!--Add Quote-->
+        <scene sceneID="Nj6-SW-dZ9">
+            <objects>
+                <viewController id="9Zb-J3-0QE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cFG-SE-jiB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hec-xM-Hxw">
+                                <rect key="frame" x="20" y="385" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add Quote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3u-ja-iCj">
+                                <rect key="frame" x="20" y="335" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vrx-Z1-Tvj">
+                                <rect key="frame" x="20" y="115" width="335" height="169"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wp-lM-YB3">
+                                <rect key="frame" x="20" y="84" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4b-4b-C7C">
+                                <rect key="frame" x="20" y="304" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hec-xM-Hxw" firstAttribute="top" secondItem="e3u-ja-iCj" secondAttribute="bottom" constant="20" id="0v9-Ny-xYr"/>
+                            <constraint firstItem="9Wp-lM-YB3" firstAttribute="leading" secondItem="Bu1-ur-6VR" secondAttribute="leading" constant="20" id="FfU-vf-UHG"/>
+                            <constraint firstItem="j4b-4b-C7C" firstAttribute="leading" secondItem="Bu1-ur-6VR" secondAttribute="leading" constant="20" id="IUl-T4-rkt"/>
+                            <constraint firstItem="e3u-ja-iCj" firstAttribute="top" secondItem="j4b-4b-C7C" secondAttribute="bottom" constant="10" id="JET-tZ-6NN"/>
+                            <constraint firstItem="j4b-4b-C7C" firstAttribute="top" secondItem="Vrx-Z1-Tvj" secondAttribute="bottom" constant="20" id="Nbq-t7-7Ha"/>
+                            <constraint firstItem="Vrx-Z1-Tvj" firstAttribute="top" secondItem="9Wp-lM-YB3" secondAttribute="bottom" constant="10" id="PBT-ov-HMw"/>
+                            <constraint firstItem="Bu1-ur-6VR" firstAttribute="trailing" secondItem="9Wp-lM-YB3" secondAttribute="trailing" constant="20" id="Qem-IO-bUv"/>
+                            <constraint firstItem="Bu1-ur-6VR" firstAttribute="trailing" secondItem="Hec-xM-Hxw" secondAttribute="trailing" constant="20" id="TCL-o9-9du"/>
+                            <constraint firstItem="9Wp-lM-YB3" firstAttribute="top" secondItem="Bu1-ur-6VR" secondAttribute="top" constant="20" id="X9l-Uj-9dK"/>
+                            <constraint firstItem="e3u-ja-iCj" firstAttribute="leading" secondItem="Bu1-ur-6VR" secondAttribute="leading" constant="20" id="cln-EQ-Tn5"/>
+                            <constraint firstItem="Bu1-ur-6VR" firstAttribute="trailing" secondItem="e3u-ja-iCj" secondAttribute="trailing" constant="20" id="f1f-Sq-a1I"/>
+                            <constraint firstItem="Vrx-Z1-Tvj" firstAttribute="leading" secondItem="Bu1-ur-6VR" secondAttribute="leading" constant="20" id="jJH-lR-bct"/>
+                            <constraint firstItem="Bu1-ur-6VR" firstAttribute="bottom" secondItem="Hec-xM-Hxw" secondAttribute="bottom" constant="252" id="jND-xb-Sh9"/>
+                            <constraint firstItem="Hec-xM-Hxw" firstAttribute="leading" secondItem="Bu1-ur-6VR" secondAttribute="leading" constant="20" id="lpi-lQ-eqo"/>
+                            <constraint firstItem="Bu1-ur-6VR" firstAttribute="trailing" secondItem="Vrx-Z1-Tvj" secondAttribute="trailing" constant="20" id="ta8-ZE-3Nb"/>
+                            <constraint firstItem="Bu1-ur-6VR" firstAttribute="trailing" secondItem="j4b-4b-C7C" secondAttribute="trailing" constant="20" id="vR3-Pv-cFW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bu1-ur-6VR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Quote" id="rXx-wa-PFk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ret-Lw-gv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="-18"/>
         </scene>
     </scenes>
 </document>
